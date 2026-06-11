@@ -1,0 +1,25 @@
+# CoSee – Application Settings
+# These values are the defaults and can be overridden with environment
+# variables prefixed with COSEE_, e.g. COSEE_LOG_LEVEL=DEBUG.
+
+log_level: INFO
+log_format: "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
+
+# Data source: "yahoo_finance" (no key needed) or "alpha_vantage"
+data_source: yahoo_finance
+
+# Default rolling-window size in trading days
+default_window: 30
+
+# Number of top correlated pairs to display
+top_n_pairs: 20
+
+# Path to the asset list (relative to project root)
+assets_config_path: config/assets.yaml
+
+# Normalisation method: log_return | pct_return | z_score | min_max | none
+normalisation_method: log_return
+
+# Date range (ISO 8601); leave blank for defaults
+start_date: ""
+end_date: ""

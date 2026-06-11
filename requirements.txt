@@ -1,0 +1,18 @@
+# CoSee – Python dependencies
+# Install with: pip install -r requirements.txt
+
+# Core data stack
+numpy>=1.24,<3
+pandas>=2.0,<3
+scipy>=1.11,<2
+
+# YAML configuration
+PyYAML>=6.0,<7
+
+# Data connectors (optional – only needed for the respective source)
+yfinance>=0.2.36,<1     # Yahoo Finance connector (no API key required)
+requests>=2.31,<3        # HTTP client for Alpha Vantage connector
+
+# Development / testing
+pytest>=7.4,<9
+pytest-cov>=4.1,<6
