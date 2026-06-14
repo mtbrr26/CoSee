@@ -8,3 +8,6 @@ build/
 .coverage
 htmlcov/
 *.log
+
+# Local data cache – Parquet files can be large; do not commit raw data
+data/raw/
