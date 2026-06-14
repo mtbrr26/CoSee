@@ -120,7 +120,7 @@
       "source_file": "scripts/download_data.py",
       "source_location": "L100",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "_last_stored_date()",
       "id": "scripts_download_data_last_stored_date"
     },
@@ -130,7 +130,7 @@
       "source_file": "scripts/download_data.py",
       "source_location": "L100",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "date",
       "id": "date"
     },
@@ -140,7 +140,7 @@
       "source_file": "scripts/download_data.py",
       "source_location": "L109",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "_download_asset()",
       "id": "scripts_download_data_download_asset"
     },
@@ -150,7 +150,7 @@
       "source_file": "scripts/download_data.py",
       "source_location": "L109",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "yahoofinanceconnector",
       "id": "yahoofinanceconnector"
     },
@@ -170,7 +170,7 @@
       "source_file": "scripts/download_data.py",
       "source_location": "L165",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "argumentparser",
       "id": "argumentparser"
     },
@@ -240,7 +240,7 @@
       "source_file": "scripts/download_data.py",
       "source_location": "L101",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "return the most recent date in a stored dataframe.",
       "id": "scripts_download_data_rationale_101"
     },
@@ -250,7 +250,7 @@
       "source_file": "scripts/download_data.py",
       "source_location": "L115",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "fetch data for *asset* and update the local cache.      returns true on success,",
       "id": "scripts_download_data_rationale_115"
     },
@@ -513,126 +513,6 @@
       "community": 7,
       "norm_label": "enum",
       "id": "enum"
-    },
-    {
-      "label": "run_pipeline.py",
-      "file_type": "code",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "run_pipeline.py",
-      "id": "scripts_run_pipeline"
-    },
-    {
-      "label": "load_assets()",
-      "file_type": "code",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L56",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "load_assets()",
-      "id": "scripts_run_pipeline_load_assets"
-    },
-    {
-      "label": "Path",
-      "file_type": "code",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L56",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "path",
-      "id": "scripts_run_pipeline_py_path"
-    },
-    {
-      "label": "Asset",
-      "file_type": "code",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L56",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "asset",
-      "id": "scripts_run_pipeline_py_asset"
-    },
-    {
-      "label": "_print_table()",
-      "file_type": "code",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L85",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "_print_table()",
-      "id": "scripts_run_pipeline_print_table"
-    },
-    {
-      "label": "CorrelationResult",
-      "file_type": "code",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L85",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "correlationresult",
-      "id": "scripts_run_pipeline_py_correlationresult"
-    },
-    {
-      "label": "_print_csv()",
-      "file_type": "code",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L102",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "_print_csv()",
-      "id": "scripts_run_pipeline_print_csv"
-    },
-    {
-      "label": "_print_json()",
-      "file_type": "code",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L111",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "_print_json()",
-      "id": "scripts_run_pipeline_print_json"
-    },
-    {
-      "label": "build_parser()",
-      "file_type": "code",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L131",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "build_parser()",
-      "id": "scripts_run_pipeline_build_parser"
-    },
-    {
-      "label": "main()",
-      "file_type": "code",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L192",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "main()",
-      "id": "scripts_run_pipeline_main"
-    },
-    {
-      "label": "CoSee pipeline runner script.  Loads assets from config/assets.yaml, fetches mar",
-      "file_type": "rationale",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "cosee pipeline runner script.  loads assets from config/assets.yaml, fetches mar",
-      "id": "scripts_run_pipeline_rationale_1"
-    },
-    {
-      "label": "Load assets from *config_path* YAML file.",
-      "file_type": "rationale",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L57",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "load assets from *config_path* yaml file.",
-      "id": "scripts_run_pipeline_rationale_57"
     },
     {
       "label": "CoSee: Correlated Asset Pair Identification Engine",
@@ -1148,17 +1028,6 @@
       "target": "scripts_download_data_build_parser"
     },
     {
-      "relation": "references",
-      "context": "return_type",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L131",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline_build_parser",
-      "target": "argumentparser"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".github/copilot-instructions.md",
@@ -1349,196 +1218,6 @@
       "target": "github_graphify_what_it_is"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L131",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline",
-      "target": "scripts_run_pipeline_build_parser"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L56",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline",
-      "target": "scripts_run_pipeline_load_assets"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L192",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline",
-      "target": "scripts_run_pipeline_main"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L102",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline",
-      "target": "scripts_run_pipeline_print_csv"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L111",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline",
-      "target": "scripts_run_pipeline_print_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L85",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline",
-      "target": "scripts_run_pipeline_print_table"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline_rationale_1",
-      "target": "scripts_run_pipeline"
-    },
-    {
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L56",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline_load_assets",
-      "target": "scripts_run_pipeline_py_asset"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L56",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline_load_assets",
-      "target": "scripts_run_pipeline_py_path"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L225",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline_main",
-      "target": "scripts_run_pipeline_load_assets"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L57",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline_rationale_57",
-      "target": "scripts_run_pipeline_load_assets"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L259",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline_main",
-      "target": "scripts_run_pipeline_print_table"
-    },
-    {
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L85",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline_print_table",
-      "target": "scripts_run_pipeline_py_correlationresult"
-    },
-    {
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L102",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline_print_csv",
-      "target": "scripts_run_pipeline_py_correlationresult"
-    },
-    {
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L111",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline_print_json",
-      "target": "scripts_run_pipeline_py_correlationresult"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L261",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline_main",
-      "target": "scripts_run_pipeline_print_csv"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L263",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline_main",
-      "target": "scripts_run_pipeline_print_json"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/run_pipeline.py",
-      "source_location": "L193",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_run_pipeline_main",
-      "target": "scripts_run_pipeline_build_parser"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -1659,5 +1338,5 @@
       "source_file": "README.md"
     }
   ],
-  "built_at_commit": "e176d3d3503deef6630f5a558aae1e887c56f1dd"
+  "built_at_commit": "6a90e4f2e2641330694a936eabe606f9fe910e00"
 }

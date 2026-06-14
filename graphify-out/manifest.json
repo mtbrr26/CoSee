@@ -4,11 +4,6 @@
     "ast_hash": "96df36eab95d03d8452f758d1471ffa4",
     "semantic_hash": "96df36eab95d03d8452f758d1471ffa4"
   },
-  "scripts/run_pipeline.py": {
-    "mtime": 1781357817.9004529,
-    "ast_hash": "de4ce125247b2b9918c96e849607f735",
-    "semantic_hash": "de4ce125247b2b9918c96e849607f735"
-  },
   ".github/copilot-instructions.md": {
     "mtime": 1781450251.7605658,
     "ast_hash": "46bee42e181d16bc35874d3a8e382d01",
