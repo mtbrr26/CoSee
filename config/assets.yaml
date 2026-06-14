@@ -128,3 +128,104 @@ assets:
     asset_type: stock
     exchange: Euronext Paris
     currency: EUR
+
+  # --- Additional US Large-Cap Stocks (sample universe) ---
+  - ticker: GS
+    name: Goldman Sachs Group Inc.
+    asset_type: stock
+    exchange: NYSE
+    currency: USD
+
+  - ticker: XOM
+    name: Exxon Mobil Corporation
+    asset_type: stock
+    exchange: NYSE
+    currency: USD
+
+  - ticker: JNJ
+    name: Johnson & Johnson
+    asset_type: stock
+    exchange: NYSE
+    currency: USD
+
+  - ticker: NVDA
+    name: NVIDIA Corporation
+    asset_type: stock
+    exchange: NASDAQ
+    currency: USD
+
+  # --- Additional ETFs ---
+  - ticker: VXX
+    name: iPath Series B S&P 500 VIX Short-Term Futures ETN
+    asset_type: etf
+    exchange: CBOE
+    currency: USD
+
+  - ticker: IEF
+    name: iShares 7-10 Year Treasury Bond ETF
+    asset_type: etf
+    exchange: NASDAQ
+    currency: USD
+
+  - ticker: HYG
+    name: iShares iBoxx $ High Yield Corporate Bond ETF
+    asset_type: etf
+    exchange: NYSE Arca
+    currency: USD
+
+  # --- Additional Global Indices ---
+  - ticker: "^DJI"
+    name: Dow Jones Industrial Average
+    asset_type: index
+    exchange: NYSE
+    currency: USD
+
+  - ticker: "^STOXX50E"
+    name: EURO STOXX 50
+    asset_type: index
+    exchange: Euronext
+    currency: EUR
+
+  # --- Additional Commodities ---
+  - ticker: "NG=F"
+    name: Natural Gas Futures
+    asset_type: commodity
+    exchange: NYMEX
+    currency: USD
+
+  - ticker: "ZC=F"
+    name: Corn Futures
+    asset_type: commodity
+    exchange: CBOT
+    currency: USD
+
+  - ticker: "ZW=F"
+    name: Wheat Futures
+    asset_type: commodity
+    exchange: CBOT
+    currency: USD
+
+  # --- FX & Crypto ---
+  - ticker: "EURUSD=X"
+    name: EUR/USD Exchange Rate
+    asset_type: index
+    exchange: FOREX
+    currency: USD
+
+  - ticker: "GBPUSD=X"
+    name: GBP/USD Exchange Rate
+    asset_type: index
+    exchange: FOREX
+    currency: USD
+
+  - ticker: "USDJPY=X"
+    name: USD/JPY Exchange Rate
+    asset_type: index
+    exchange: FOREX
+    currency: USD
+
+  - ticker: "BTC-USD"
+    name: Bitcoin / USD
+    asset_type: index
+    exchange: CRYPTO
+    currency: USD

@@ -13,6 +13,9 @@ PyYAML>=6.0,<7
 yfinance>=0.2.36,<1     # Yahoo Finance connector (no API key required)
 requests>=2.31,<3        # HTTP client for Alpha Vantage connector
 
+# Parquet storage (local data cache)
+pyarrow>=14.0,<20
+
 # Development / testing
 pytest>=7.4,<9
 pytest-cov>=4.1,<6

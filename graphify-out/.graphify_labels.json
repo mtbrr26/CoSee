@@ -1,0 +1,17 @@
+{
+  "0": "Data Ingestion & Connectors",
+  "1": "Processing Pipeline (Clean/Normalise/Align)",
+  "2": "Correlation Engine",
+  "3": "Domain Models (Asset & Results)",
+  "4": "Configuration & Asset Universe",
+  "5": "Config Loading & Settings",
+  "6": "CLI & Logging",
+  "7": "BaseConnector Interface",
+  "8": "Series Alignment",
+  "9": "Data Cleaning",
+  "10": "Package Init",
+  "11": "Test Suite Init",
+  "12": "Community 12",
+  "13": "Community 13",
+  "14": "Community 14"
+}
