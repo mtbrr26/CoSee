@@ -1,0 +1,157 @@
+{
+  "/Users/mathieu26/Desktop/Projects/CoSee/.vscode/settings.json": {
+    "mtime": 1781449802.861663,
+    "ast_hash": "96df36eab95d03d8452f758d1471ffa4",
+    "semantic_hash": "96df36eab95d03d8452f758d1471ffa4"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/cosee/__init__.py": {
+    "mtime": 1781357817.8983424,
+    "ast_hash": "57b56e2af7e4fc0ca482ebff85b23dd8",
+    "semantic_hash": "57b56e2af7e4fc0ca482ebff85b23dd8"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/cosee/config.py": {
+    "mtime": 1781357817.898426,
+    "ast_hash": "1e80dbf6dbf05bbd3a791050a15966b6",
+    "semantic_hash": "1e80dbf6dbf05bbd3a791050a15966b6"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/cosee/correlation/__init__.py": {
+    "mtime": 1781357817.898546,
+    "ast_hash": "c998fced065cbbc22d51258b74bb82bc",
+    "semantic_hash": "c998fced065cbbc22d51258b74bb82bc"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/cosee/correlation/engine.py": {
+    "mtime": 1781357817.8987694,
+    "ast_hash": "5df0a0560d0344cb5fcf0327113f274d",
+    "semantic_hash": "5df0a0560d0344cb5fcf0327113f274d"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/cosee/ingestion/__init__.py": {
+    "mtime": 1781357817.898905,
+    "ast_hash": "5bfe577f7fb2a8f7c76923d10b2a6a90",
+    "semantic_hash": "5bfe577f7fb2a8f7c76923d10b2a6a90"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/cosee/ingestion/alpha_vantage.py": {
+    "mtime": 1781357817.899023,
+    "ast_hash": "9c71d73bccb0cdb8c600bed5c3468111",
+    "semantic_hash": "9c71d73bccb0cdb8c600bed5c3468111"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/cosee/ingestion/base.py": {
+    "mtime": 1781357817.8991027,
+    "ast_hash": "cbbbf2d56d6a0681422bee6a5b3ce216",
+    "semantic_hash": "cbbbf2d56d6a0681422bee6a5b3ce216"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/cosee/ingestion/factory.py": {
+    "mtime": 1781357817.8991709,
+    "ast_hash": "31840c09ec901d3e4b72ac6404ec4109",
+    "semantic_hash": "31840c09ec901d3e4b72ac6404ec4109"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/cosee/ingestion/yahoo_finance.py": {
+    "mtime": 1781357817.8992562,
+    "ast_hash": "b5df9ca5b11107d1ea50c400c281a9c6",
+    "semantic_hash": "b5df9ca5b11107d1ea50c400c281a9c6"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/cosee/logging_config.py": {
+    "mtime": 1781357817.8993347,
+    "ast_hash": "56eedb119f35fe1d9b6af251cd5afe60",
+    "semantic_hash": "56eedb119f35fe1d9b6af251cd5afe60"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/cosee/models/__init__.py": {
+    "mtime": 1781357817.8994522,
+    "ast_hash": "4e5c0da01a3b8db3ef3145c190ca0d9f",
+    "semantic_hash": "4e5c0da01a3b8db3ef3145c190ca0d9f"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/cosee/models/asset.py": {
+    "mtime": 1781357817.899529,
+    "ast_hash": "c62b3282e6f97eddaf7c32bdf5de9854",
+    "semantic_hash": "c62b3282e6f97eddaf7c32bdf5de9854"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/cosee/models/correlation_result.py": {
+    "mtime": 1781357817.8996062,
+    "ast_hash": "4222e207cc77c5ecebe67d0e269ae267",
+    "semantic_hash": "4222e207cc77c5ecebe67d0e269ae267"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/cosee/processing/__init__.py": {
+    "mtime": 1781357817.899736,
+    "ast_hash": "ea9ffbb6f824b7c2b99160daea2d5a70",
+    "semantic_hash": "ea9ffbb6f824b7c2b99160daea2d5a70"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/cosee/processing/aligner.py": {
+    "mtime": 1781357817.899828,
+    "ast_hash": "f195821e8b4547a260d189355d1ec306",
+    "semantic_hash": "f195821e8b4547a260d189355d1ec306"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/cosee/processing/cleaner.py": {
+    "mtime": 1781357817.8999019,
+    "ast_hash": "5d703305612104d5edcdf373625f9e97",
+    "semantic_hash": "5d703305612104d5edcdf373625f9e97"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/cosee/processing/normalizer.py": {
+    "mtime": 1781357817.8999856,
+    "ast_hash": "048f5875a03221b72d62dc09154937a2",
+    "semantic_hash": "048f5875a03221b72d62dc09154937a2"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/cosee/processing/pipeline.py": {
+    "mtime": 1781357817.9000688,
+    "ast_hash": "1cca99434e9ce74438c166d3e53425a0",
+    "semantic_hash": "1cca99434e9ce74438c166d3e53425a0"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/scripts/run_pipeline.py": {
+    "mtime": 1781357817.9004529,
+    "ast_hash": "de4ce125247b2b9918c96e849607f735",
+    "semantic_hash": "de4ce125247b2b9918c96e849607f735"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/tests/__init__.py": {
+    "mtime": 1781357817.900596,
+    "ast_hash": "53556ce383c60b379c37de434c49ca55",
+    "semantic_hash": "53556ce383c60b379c37de434c49ca55"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/tests/test_correlation.py": {
+    "mtime": 1781357817.9006946,
+    "ast_hash": "1b3650bf0efbf49e62eb2a1640cc3f50",
+    "semantic_hash": "1b3650bf0efbf49e62eb2a1640cc3f50"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/tests/test_ingestion.py": {
+    "mtime": 1781357817.9008226,
+    "ast_hash": "020a7a2b731b00f23e59f5e698f18f3e",
+    "semantic_hash": "020a7a2b731b00f23e59f5e698f18f3e"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/tests/test_models.py": {
+    "mtime": 1781357817.9009044,
+    "ast_hash": "dbf6a5ff65b383941ae991c978305bc2",
+    "semantic_hash": "dbf6a5ff65b383941ae991c978305bc2"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/tests/test_processing.py": {
+    "mtime": 1781357817.9010093,
+    "ast_hash": "44c72e3cd36525e474709e3e92dbd50b",
+    "semantic_hash": "44c72e3cd36525e474709e3e92dbd50b"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/.github/copilot-instructions.md": {
+    "mtime": 1781450251.7605658,
+    "ast_hash": "46bee42e181d16bc35874d3a8e382d01",
+    "semantic_hash": "46bee42e181d16bc35874d3a8e382d01"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/.github/graphify.md": {
+    "mtime": 1781450186.612173,
+    "ast_hash": "70f60baac7d9881d10e0dc0a4d5f1343",
+    "semantic_hash": "70f60baac7d9881d10e0dc0a4d5f1343"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/README.md": {
+    "mtime": 1781357817.8979983,
+    "ast_hash": "4be015bd28ba6c5007d1e71d78f54df1",
+    "semantic_hash": "4be015bd28ba6c5007d1e71d78f54df1"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/config/assets.yaml": {
+    "mtime": 1781357817.8981218,
+    "ast_hash": "e90b1baf8af2008c6f227d29ea94c828",
+    "semantic_hash": "e90b1baf8af2008c6f227d29ea94c828"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/config/settings.yaml": {
+    "mtime": 1781357817.8982055,
+    "ast_hash": "639b83321c25bc745af87d09282c6021",
+    "semantic_hash": "639b83321c25bc745af87d09282c6021"
+  },
+  "/Users/mathieu26/Desktop/Projects/CoSee/requirements.txt": {
+    "mtime": 1781357817.9002566,
+    "ast_hash": "5ec58fd00271a6d12eee2fa4f9642522",
+    "semantic_hash": "5ec58fd00271a6d12eee2fa4f9642522"
+  }
+}
