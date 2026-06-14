@@ -140,9 +140,9 @@
     "semantic_hash": "4be015bd28ba6c5007d1e71d78f54df1"
   },
   "config/assets.yaml": {
-    "mtime": 1781357817.8981218,
-    "ast_hash": "e90b1baf8af2008c6f227d29ea94c828",
-    "semantic_hash": "e90b1baf8af2008c6f227d29ea94c828"
+    "mtime": 1781451253.7058933,
+    "ast_hash": "d0c9e9ab674b7361c8db741eb44c3b0d",
+    "semantic_hash": ""
   },
   "config/settings.yaml": {
     "mtime": 1781357817.8982055,
@@ -150,8 +150,18 @@
     "semantic_hash": "639b83321c25bc745af87d09282c6021"
   },
   "requirements.txt": {
-    "mtime": 1781357817.9002566,
-    "ast_hash": "5ec58fd00271a6d12eee2fa4f9642522",
-    "semantic_hash": "5ec58fd00271a6d12eee2fa4f9642522"
+    "mtime": 1781451253.7058704,
+    "ast_hash": "4d5609651792722100b92b821f85fb47",
+    "semantic_hash": ""
+  },
+  "scripts/download_data.py": {
+    "mtime": 1781451619.345053,
+    "ast_hash": "0380a3cb0c0a6daffa7a9de814fc1f71",
+    "semantic_hash": ""
+  },
+  "tests/test_download_data.py": {
+    "mtime": 1781451619.3450525,
+    "ast_hash": "daffd01cbfd45e6fca67ffc160cc90e9",
+    "semantic_hash": ""
   }
 }

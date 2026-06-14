@@ -1,16 +1,16 @@
 # Graph Report - CoSee  (2026-06-14)
 
 ## Corpus Check
-- 28 files · ~8,296 words
+- 30 files · ~9,807 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 296 nodes · 618 edges · 12 communities (10 shown, 2 thin omitted)
-- Extraction: 75% EXTRACTED · 25% INFERRED · 0% AMBIGUOUS · INFERRED: 152 edges (avg confidence: 0.52)
+- 334 nodes · 698 edges · 15 communities (11 shown, 4 thin omitted)
+- Extraction: 79% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 147 edges (avg confidence: 0.51)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `05f2b405`
+- Built from commit: `aed71880`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -27,6 +27,9 @@
 - [[_COMMUNITY_Data Cleaning|Data Cleaning]]
 - [[_COMMUNITY_Package Init|Package Init]]
 - [[_COMMUNITY_Test Suite Init|Test Suite Init]]
+- [[_COMMUNITY_Community 12|Community 12]]
+- [[_COMMUNITY_Community 13|Community 13]]
+- [[_COMMUNITY_Community 14|Community 14]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Asset` - 62 edges
@@ -42,15 +45,15 @@
 
 ## Surprising Connections (you probably didn't know these)
 - `ArgumentParser` --uses--> `CorrelationEngine`  [INFERRED]
-  scripts/run_pipeline.py → cosee/correlation/engine.py
-- `Asset` --uses--> `CorrelationEngine`  [INFERRED]
-  scripts/run_pipeline.py → cosee/correlation/engine.py
-- `CorrelationResult` --uses--> `CorrelationEngine`  [INFERRED]
-  scripts/run_pipeline.py → cosee/correlation/engine.py
-- `Path` --uses--> `CorrelationEngine`  [INFERRED]
-  scripts/run_pipeline.py → cosee/correlation/engine.py
-- `DataFrame` --uses--> `Asset`  [INFERRED]
-  tests/test_correlation.py → cosee/models/asset.py
+  scripts/download_data.py → cosee/correlation/engine.py
+- `ArgumentParser` --uses--> `Asset`  [INFERRED]
+  scripts/download_data.py → cosee/models/asset.py
+- `ArgumentParser` --uses--> `AssetType`  [INFERRED]
+  scripts/download_data.py → cosee/models/asset.py
+- `ArgumentParser` --uses--> `CorrelationResult`  [INFERRED]
+  scripts/download_data.py → cosee/models/correlation_result.py
+- `ArgumentParser` --uses--> `ProcessingPipeline`  [INFERRED]
+  scripts/download_data.py → cosee/processing/pipeline.py
 
 ## Import Cycles
 - None detected.
@@ -59,27 +62,27 @@
 - **Pipeline Configuration Settings** — config_settings_data_source, config_settings_normalisation_method, config_settings_default_window, config_settings_top_n_pairs [EXTRACTED 1.00]
 - **Core Pipeline Concepts (data ingestion → processing → correlation)** — readme_pipeline_flow, readme_asset_universe_concept, readme_rolling_static_correlation, config_assets_asset_universe [EXTRACTED 1.00]
 
-## Communities (12 total, 2 thin omitted)
+## Communities (15 total, 4 thin omitted)
 
 ### Community 0 - "Data Ingestion & Connectors"
 Cohesion: 0.07
 Nodes (39): ABC, BaseConnector, Asset, DataFrame, date, BaseConnector, Asset, DataFrame (+31 more)
 
 ### Community 1 - "Processing Pipeline (Clean/Normalise/Align)"
-Cohesion: 0.07
-Nodes (34): DataFrame, Series, Timestamp, DataFrame, DataFrame, Timestamp, DataAligner, DataCleaner (+26 more)
+Cohesion: 0.08
+Nodes (30): DataFrame, Series, DataFrame, Timestamp, DataAligner, DataCleaner, DataNormalizer, DataAligner (+22 more)
 
 ### Community 2 - "Correlation Engine"
-Cohesion: 0.11
-Nodes (16): CorrelationEngine, Correlation engine.  Computes pairwise Pearson correlations (both static and rol, Return the full pairwise correlation matrix.          Args:             returns:, Compute correlation between two series.          Returns:             Tuple of `, Computes pairwise correlations between asset return series.      Args:         w, Compute correlations and return the top-N pairs.          Args:             retu, Correlation analysis subpackage., CorrelationResult (+8 more)
+Cohesion: 0.17
+Nodes (10): CorrelationEngine, Correlation engine.  Computes pairwise Pearson correlations (both static and rol, Computes pairwise correlations between asset return series.      Args:         w, Correlation analysis subpackage., _make_aligned(), _make_correlated(), DataFrame, Tests for the correlation engine. (+2 more)
 
 ### Community 3 - "Domain Models (Asset & Results)"
-Cohesion: 0.07
-Nodes (30): ArgumentParser, configure_logging(), Centralised logging setup for CoSee.  Call ``configure_logging()`` once at appli, Configure the root logger for CoSee.      Args:         level: Log level string, Enum, Asset, AssetType, Supported asset categories. (+22 more)
+Cohesion: 0.06
+Nodes (35): Return the full pairwise correlation matrix.          Args:             returns:, Compute correlation between two series.          Returns:             Tuple of `, Compute correlations and return the top-N pairs.          Args:             retu, CorrelationResult, DataFrame, Series, configure_logging(), Centralised logging setup for CoSee.  Call ``configure_logging()`` once at appli (+27 more)
 
 ### Community 4 - "Configuration & Asset Universe"
-Cohesion: 0.14
-Nodes (15): Asset universe configuration (tickers, names, types), Asset types: stock, etf, commodity, index, company, Setting: data_source (yahoo_finance or alpha_vantage), Setting: default_window — rolling window in trading days (default 30), COSEE_* environment variable override mechanism, Setting: normalisation_method (log_return | pct_return | z_score | min_max | none), Setting: top_n_pairs — number of top correlated pairs to display (default 20), Asset Universe (stocks, ETFs, commodities, indices) (+7 more)
+Cohesion: 0.29
+Nodes (8): Setting: default_window — rolling window in trading days (default 30), Setting: normalisation_method (log_return | pct_return | z_score | min_max | none), Setting: top_n_pairs — number of top correlated pairs to display (default 20), Asset Universe (stocks, ETFs, commodities, indices), CLI Entry Point (run_pipeline.py), CoSee: Correlated Asset Pair Identification Engine, Clean → Normalise → Align → Correlate Pipeline Flow, Rolling and Static Pairwise Pearson Correlation
 
 ### Community 5 - "Config Loading & Settings"
 Cohesion: 0.18
@@ -98,23 +101,27 @@ Cohesion: 0.22
 Nodes (8): Core commands, Graphify — Reference for Copilot, Ignoring files, Install, Keeping the graph fresh, Privacy notes, Useful for CoSee, What it is
 
 ### Community 9 - "Data Cleaning"
-Cohesion: 0.50
-Nodes (3): DataFrame, Series, Compute the normalised return series for *df*.          Args:             df: Cl
+Cohesion: 0.09
+Nodes (29): ArgumentParser, Asset, date, Path, _build_parser(), _download_asset(), _last_stored_date(), _load_assets() (+21 more)
+
+### Community 12 - "Community 12"
+Cohesion: 0.38
+Nodes (5): DataFrame, Series, Timestamp, Align all *series* onto a common DatetimeIndex.          Args:             serie, Convenience wrapper – filters *series_map* to *tickers* before aligning.
 
 ## Knowledge Gaps
-- **27 isolated node(s):** `What this project is`, `Key settings (`config/settings.yaml`)`, `Coding conventions`, `Testing rules`, `What to always confirm before doing` (+22 more)
+- **27 isolated node(s):** `DataFrame`, `What this project is`, `Key settings (`config/settings.yaml`)`, `Coding conventions`, `Testing rules` (+22 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Asset` connect `Domain Models (Asset & Results)` to `Data Ingestion & Connectors`, `Correlation Engine`, `BaseConnector Interface`?**
-  _High betweenness centrality (0.371) - this node is a cross-community bridge._
-- **Why does `ProcessingPipeline` connect `Processing Pipeline (Clean/Normalise/Align)` to `Domain Models (Asset & Results)`?**
-  _High betweenness centrality (0.312) - this node is a cross-community bridge._
-- **Why does `CorrelationEngine` connect `Correlation Engine` to `Domain Models (Asset & Results)`?**
-  _High betweenness centrality (0.092) - this node is a cross-community bridge._
+- **Why does `Asset` connect `Domain Models (Asset & Results)` to `Data Ingestion & Connectors`, `Data Cleaning`, `Correlation Engine`, `BaseConnector Interface`?**
+  _High betweenness centrality (0.359) - this node is a cross-community bridge._
+- **Why does `ProcessingPipeline` connect `Processing Pipeline (Clean/Normalise/Align)` to `Data Cleaning`, `Domain Models (Asset & Results)`?**
+  _High betweenness centrality (0.301) - this node is a cross-community bridge._
+- **Why does `ArgumentParser` connect `Data Cleaning` to `Processing Pipeline (Clean/Normalise/Align)`, `Correlation Engine`, `Domain Models (Asset & Results)`?**
+  _High betweenness centrality (0.134) - this node is a cross-community bridge._
 - **Are the 32 inferred relationships involving `Asset` (e.g. with `ArgumentParser` and `CorrelationEngine`) actually correct?**
   _`Asset` has 32 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 8 inferred relationships involving `CorrelationEngine` (e.g. with `ArgumentParser` and `Asset`) actually correct?**
